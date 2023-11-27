@@ -12,10 +12,10 @@
     include 'menu.php'
 ?>
 
-<head>
-    <img src="logo_match.png" alt="logotipo de Match Solidario">
+<header>
+    <img class="logo-ppal" src="assets/imgs/logo-match-solidario.png" alt="logotipo de Match Solidario">
     <h1>Hackaton solidario</h1>
-</head>
+</header>
 
 <main>
 

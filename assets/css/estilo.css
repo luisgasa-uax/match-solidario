@@ -1,29 +1,23 @@
-@font-face {
-  font-family: Dynamo;
-  src: url('./assets/fonts/dynamo/Dynamo.woff'), url('./assets/fonts/dynamo/Dynamo-Black.woff'), url('./assets/fonts/dynamo/Dynamo-Bold.woff'), url('./assets/fonts/dynamo/Dynamo-Bold.woff'),
-    url('./assets/fonts/dynamo/Dynamo-Book.woff'), url('./assets/fonts/dynamo/Dynamo-Light.woff'),
-    url('./assets/fonts/dynamo/Dynamo-XLight.woff');
-}
 
-@font-face {
-  font-family: Manrope;
-  src: url('./assets/fonts/manrope/manrope-regular.woff'), url('./assets/fonts/manrope/manrope-Black.woff'), url('./assets/fonts/manrope/manrope-Bold.woff'), url('./assets/fonts/manrope/manrope-Bold.woff'),
-    url('./assets/fonts/manrope/manrope-Book.woff'), url('./assets/fonts/manrope/manrope-Light.woff'),
-    url('./assets/fonts/manrope/manrope-XLight.woff');
-}
+@import url('https://db.onlinewebfonts.com/c/574e5b8318e53b92bdb78209bd03fc72?family=Dynamo+W04+Bold+Condensed');
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+
+
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  --fuente-encabezados: "Black Ops One", cursive;
+  --fuente-encabezados: "Dynamo W04 Bold Condensed",  sans-serif;
   --fuente-general: "Manrope";
+  font-family: 'Manrope', sans-serif;
 
   --color1: #076DF2;
   --color2: #277FF2;
   --color3: #7EB0F2;
   --color4: #38BDF2;
   --color5: #F2F2F2;
+  --fondo-logo: #f7f7f7;
 
   --titulos_color: var(--color1);
   --texto_color: var(--color2);
@@ -49,21 +43,19 @@ body {
   margin: 0;
 
   color: var(--texto_color);
-  font-family: Arial, sans-serif;
-
+  font-family: var(--fuente-general);
   /* Gradiente */
   background: rgb(7, 109, 242);
   background: linear-gradient(180deg, rgba(7, 109, 242, 1) 0%, rgba(167, 199, 242, 1) 20%, rgba(242, 242, 242, 1) 100%, rgba(7, 109, 242, 1) 100%);
 }
 
 header {
-  background-color: #111;
-  color: yellowgreen;
+  background-color: var(--fondo-logo);
   padding: 20px;
   text-align: center;
   font-size: 2em;
-  border-bottom: 2px solid #fff;
   font-family: var(--fuente-encabezados);
+  font-family: "Dynamo W04 Bold Condensed", sans-serif;
 }
 
 nav,
@@ -86,7 +78,7 @@ nav {
 .logo {
   font-size: 24px;
   font-weight: bold;
-  max-height: 64px;
+  max-height: 48px;
 }
 
 /* Estilos para la lista de navegación */
@@ -135,3 +127,13 @@ nav a {
 nav a:hover {
   text-decoration: underline;
 }
+
+header .logo-ppal {
+  width: 50%;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--fuente-encabezados);
+}
+
