@@ -18,6 +18,8 @@
     <img src="assets/imgs/<?php echo '$logo-asociacion'; ?>.png" alt="Logo de <?php echo '$nombre_asociacion'; ?>">
 </head>
 
+
+<main>
 <div class="cuerpo-asociacion">
 
     <div class="llamada_accion">
@@ -34,7 +36,7 @@
             <a href="mailto:<?php echo '$instagram_asociacion'?>"><img src="assets/imgs/instagram.png" alt="Instagram de la asociación"></a>
         </div>
     </div>
-
+</main>
 
 </div>
 

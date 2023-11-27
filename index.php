@@ -17,7 +17,7 @@
     <h1>Hackaton solidario</h1>
 </head>
 
-<div class="cuerpo">
+<main>
 
     <div class="llamada_accion">
         <p>¡Encuentra tu match más solidario!</p>
@@ -27,7 +27,7 @@
         <a class="boton" href="haz-match.php">Haz Match!</a>
         
     </div>
-</div>
+</main>
 
 <?php
     include 'footer.php';

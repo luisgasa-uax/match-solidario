@@ -1,60 +1,137 @@
 @font-face {
-    font-family: Dynamo;
-    src: url('./assets/fonts/dynamo/Dynamo.woff'), url('./assets/fonts/dynamo/Dynamo-Black.woff'), url('./assets/fonts/dynamo/Dynamo-Bold.woff'), url('./assets/fonts/dynamo/Dynamo-Bold.woff'),
+  font-family: Dynamo;
+  src: url('./assets/fonts/dynamo/Dynamo.woff'), url('./assets/fonts/dynamo/Dynamo-Black.woff'), url('./assets/fonts/dynamo/Dynamo-Bold.woff'), url('./assets/fonts/dynamo/Dynamo-Bold.woff'),
     url('./assets/fonts/dynamo/Dynamo-Book.woff'), url('./assets/fonts/dynamo/Dynamo-Light.woff'),
     url('./assets/fonts/dynamo/Dynamo-XLight.woff');
 }
+
 @font-face {
-    font-family: Manrope;
-    src: url('./assets/fonts/manrope/manrope-regular.woff'), url('./assets/fonts/manrope/manrope-Black.woff'), url('./assets/fonts/manrope/manrope-Bold.woff'), url('./assets/fonts/manrope/manrope-Bold.woff'),
+  font-family: Manrope;
+  src: url('./assets/fonts/manrope/manrope-regular.woff'), url('./assets/fonts/manrope/manrope-Black.woff'), url('./assets/fonts/manrope/manrope-Bold.woff'), url('./assets/fonts/manrope/manrope-Bold.woff'),
     url('./assets/fonts/manrope/manrope-Book.woff'), url('./assets/fonts/manrope/manrope-Light.woff'),
     url('./assets/fonts/manrope/manrope-XLight.woff');
 }
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    --fuente-encabezados: "Black Ops One", cursive;
-    --fuente-general: "Manrope";
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  --fuente-encabezados: "Black Ops One", cursive;
+  --fuente-general: "Manrope";
 
-    --color1: #076DF2;
-    --color2: #277FF2;
-    --color3: #7EB0F2;
-    --color4: #38BDF2;
-    --color5: #F2F2F2;
+  --color1: #076DF2;
+  --color2: #277FF2;
+  --color3: #7EB0F2;
+  --color4: #38BDF2;
+  --color5: #F2F2F2;
 
-    --titulos_color: var(--color1);
-    --texto_color: var(--color2);
+  --titulos_color: var(--color1);
+  --texto_color: var(--color2);
 
 
 
-    /* 
+  /* 
       --fuente-encabezados :'Megrim', cursive;
        --fuente-encabezados: 'Press Start 2P', cursive;
        --fuente-encabezados: 'Rubik', sans-serif;
        --fuente-encabezados: 'Rubik Moonrocks', cursive;
        --fuente-encabezados: 'Rubik Vinyl', cursive;
         */
-    line-height: 1.5em;
-    transition: 1s;
-  }
-  
-  body {
-    color: var(--texto_color);
-    font-family: Arial, sans-serif;
+  line-height: 1.5em;
+  transition: 1s;
+}
 
-    /* Gradiente */
-    background: rgb(7,109,242);
-    background: linear-gradient(180deg, rgba(7,109,242,1) 0%, rgba(167,199,242,1) 20%, rgba(242,242,242,1) 100%, rgba(7,109,242,1) 100%); 
-  }
-  
-  header {
-    background-color: #111;
-    color: yellowgreen;
-    padding: 20px;
-    text-align: center;
-    font-size: 2em;
-    border-bottom: 2px solid #fff;
-    font-family: var(--fuente-encabezados);
-  }
+body {
+
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+
+  color: var(--texto_color);
+  font-family: Arial, sans-serif;
+
+  /* Gradiente */
+  background: rgb(7, 109, 242);
+  background: linear-gradient(180deg, rgba(7, 109, 242, 1) 0%, rgba(167, 199, 242, 1) 20%, rgba(242, 242, 242, 1) 100%, rgba(7, 109, 242, 1) 100%);
+}
+
+header {
+  background-color: #111;
+  color: yellowgreen;
+  padding: 20px;
+  text-align: center;
+  font-size: 2em;
+  border-bottom: 2px solid #fff;
+  font-family: var(--fuente-encabezados);
+}
+
+nav,
+footer {
+  padding: 10px;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color5);
+  color: var(--color1);
+  padding: 10px 20px;
+  font-size: 1.5rem;
+}
+
+/* Estilos para el logotipo */
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  max-height: 64px;
+}
+
+/* Estilos para la lista de navegación */
+ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos para cada ítem del menú */
+ul li {
+  margin-left: 20px;
+}
+
+/* Estilos para los enlaces */
+ul li a {
+  color: var(--color1);
+  text-decoration: none;
+}
+
+ul li a:hover {
+  text-decoration: underline;
+}
+
+nav>ul {
+  display: flex;
+  flex-direction: row;
+}
+
+nav li {
+  list-style: none;
+}
+
+main {
+  flex: 1;
+  padding: 20px;
+}
+
+nav a {
+  color: var(--color1);
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
