@@ -24,7 +24,7 @@
         <p>¿A QUÉ ESPERAS?</p>
         <p>¡Tu asociación perfecta está esperando para empezar a cambiar el mundo juntos!</p>
         
-        <a class="boton" href="haz-match.php">Haz Match!</a>
+        <a class="boton " href="haz-match.php">¡Haz Match!</a>
         
     </div>
 </main>

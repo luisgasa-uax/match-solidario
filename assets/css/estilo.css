@@ -1,4 +1,3 @@
-
 @import url('https://db.onlinewebfonts.com/c/574e5b8318e53b92bdb78209bd03fc72?family=Dynamo+W04+Bold+Condensed');
 @import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
 
@@ -8,19 +7,21 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  --fuente-encabezados: "Dynamo W04 Bold Condensed",  sans-serif;
+  --fuente-encabezados: "Dynamo W04 Bold Condensed", sans-serif;
   --fuente-general: "Manrope";
   font-family: 'Manrope', sans-serif;
 
-  --color1: #076DF2;
+  --color0: #36539b;
+  --color1: #0850ae;
   --color2: #277FF2;
   --color3: #7EB0F2;
   --color4: #38BDF2;
   --color5: #F2F2F2;
   --fondo-logo: #f7f7f7;
 
-  --titulos_color: var(--color1);
-  --texto_color: var(--color2);
+
+  --titulos_color: var(--color0);
+  --texto_color: var(--color0);
 
 
 
@@ -68,18 +69,13 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--color5);
+  background-color: var(--fondo-logo);
   color: var(--color1);
   padding: 10px 20px;
   font-size: 1.5rem;
 }
 
-/* Estilos para el logotipo */
-.logo {
-  font-size: 24px;
-  font-weight: bold;
-  max-height: 48px;
-}
+
 
 /* Estilos para la lista de navegación */
 ul {
@@ -116,6 +112,8 @@ nav li {
 main {
   flex: 1;
   padding: 20px;
+
+  text-align: center;
 }
 
 nav a {
@@ -133,7 +131,66 @@ header .logo-ppal {
 }
 
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--fuente-encabezados);
 }
+
+
+.texto-con-borde {
+  color: --color0; /* Color de relleno del texto */
+  text-shadow:
+      -1px -1px 0 --color0,  
+       1px -1px 0 --color0,
+      -1px 1px 0 --color0,
+       1px 1px 0 --color0;
+}
+.boton {
+  display: inline-block;
+  padding: 10px 20px;
+  /*background-color: #007bff;
+  */
+  color: var(--color0);
+  text-decoration: none;
+  border-radius: 2rem;
+  font-size: 2rem;
+  border: 2px solid var(--color0);
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-family: var(--fuente-encabezados);
+  margin: 1.5rem;
+}
+
+.boton:hover {
+  background-color: #0056b3;
+  /* Color de fondo al pasar el mouse */
+}
+
+
+
+footer{
+  display: flex;
+  flex-direction: row;
+}
+footer .colaboran {
+  display: flex;
+  flex-direction: column;
+}
+
+footer .colaboran .colaboradores {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+footer  img {
+  max-width: 6rem;
+}
+
+
+
 
