@@ -1,25 +1,13 @@
 @import url("tema.css");
 
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-size: 18px;
-  line-height: 1.5em;
-  transition: 1s;
-}
-
 body {
-
   min-width: 320px;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
   min-height: 100vh;
   margin: 0;
-
   color: var(--texto_color);
   font-family: var(--fuente-general);
   /* Gradiente */

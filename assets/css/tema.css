@@ -2,12 +2,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
 
 :root {
-    --fuente-encabezados: "Dynamo W04 Bold Condensed", sans-serif;
-    --fuente-general: "Manrope";
-    font-family: 'Manrope', sans-serif;
 
-    
-/*
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  line-height: 1.5em;
+  transition: 1s;
+  --fuente-encabezados: "Dynamo W04 Bold Condensed", sans-serif;
+  --fuente-general: "Manrope";
+  font-family: 'Manrope', sans-serif;
+
+  /*
   --color0: #36539b;
   --color1: #0850ae;
   --color2: #277FF2;
@@ -23,8 +29,6 @@
   --color5: #F2F2F2;
   --fondo-logo: #f7f7f7;
 
-
   --titulos_color: var(--color0);
   --texto_color: var(--color0);
-
 }
