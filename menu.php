@@ -6,7 +6,7 @@
 
 <nav class="menuppal">
     <!-- <img class="logo" src="assets/imgs/logo-match-solidario.png" alt="Logotipo de la web"> -->
-    <button class="hamburger">&#9776;</button>
+    <!-- <button class="hamburger">&#9776;</button> -->
     <ul>
         <li><a href="index.php">Inicio</a></li>
         <li><a href="haz-match.php">Match</a></li>

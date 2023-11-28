@@ -6,10 +6,14 @@
     <div class="colaboran">
         <p>Colaboran</p>
         <div class="colaboradores">
-            <div class="colaborador"><a href="#"><img src="./assets/imgs/fundacion-uax.png" alt="Logo Fundación UAX"></a></div>
-            <div class="colaborador"><a href="#"><img src="assets/imgs/sodexo.png" alt="Logo Sodexo"></a></div>
-            <div class="colaborador"><a href="#"><img src="./assets/imgs/red-innicia.png" alt="Logo Red Innicia"></a></div>
-            <div class="colaborador"><a href="#"><img src="./assets/imgs/uax.png" alt="Logo UAX"></a></div>
+            <div class="colaboradores1">
+                <div class="colaborador"><a href="#"><img src="./assets/imgs/fundacion-uax.png" alt="Logo Fundación UAX"></a></div>
+                <div class="colaborador"><a href="#"><img src="assets/imgs/sodexo.png" alt="Logo Sodexo"></a></div>
+            </div>
+            <div class="colaboradores2">
+                <div class="colaborador"><a href="#"><img src="./assets/imgs/red-innicia.png" alt="Logo Red Innicia"></a></div>
+                <div class="colaborador"><a href="#"><img src="./assets/imgs/uax.png" alt="Logo UAX"></a></div>
+            </div>
         </div>
     </div>
 </footer>

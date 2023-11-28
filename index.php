@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=600px, initial-scale=1.0">
     <title>Match Solidario</title>
     <?php include 'estilos.php'; ?>
 </head>
@@ -28,6 +28,12 @@
         
     </div>
 </main>
+
+<!-- 
+<div class="comic-bubble">
+    Tu texto aquí
+</div> -->
+
 
 <?php
     include 'footer.php';

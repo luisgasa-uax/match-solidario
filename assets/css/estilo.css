@@ -10,12 +10,19 @@
   --fuente-encabezados: "Dynamo W04 Bold Condensed", sans-serif;
   --fuente-general: "Manrope";
   font-family: 'Manrope', sans-serif;
-
+/*
   --color0: #36539b;
   --color1: #0850ae;
   --color2: #277FF2;
   --color3: #7EB0F2;
   --color4: #38BDF2;
+  */
+
+  --color0: #38559B;
+  --color1: #0652E9;
+  --color2: #38B6FF;
+  --color3: #0652E9;
+  --color4: #0657F8;
   --color5: #F2F2F2;
   --fondo-logo: #f7f7f7;
 
@@ -37,6 +44,8 @@
 }
 
 body {
+
+  min-width: 320px;
 
   display: flex;
   flex-direction: column;
@@ -76,38 +85,6 @@ nav {
 }
 
 
-
-/* Estilos para la lista de navegación */
-ul {
-  list-style: none;
-  display: flex;
-  margin: 0;
-  padding: 0;
-}
-
-/* Estilos para cada ítem del menú */
-ul li {
-  margin-left: 20px;
-}
-
-/* Estilos para los enlaces */
-ul li a {
-  color: var(--color1);
-  text-decoration: none;
-}
-
-ul li a:hover {
-  text-decoration: underline;
-}
-
-nav>ul {
-  display: flex;
-  flex-direction: row;
-}
-
-nav li {
-  list-style: none;
-}
 
 main {
   flex: 1;
@@ -167,30 +144,76 @@ h6 {
 
 .boton:hover {
   background-color: #0056b3;
+  color: var(--fondo-logo);
   /* Color de fondo al pasar el mouse */
 }
-
-
 
 footer{
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 }
+
+footer .organiza {
+  flex: 30%;
+}
+
 footer .colaboran {
+  flex: 70%;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
+  
 }
 
 footer .colaboran .colaboradores {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 footer  img {
   max-width: 6rem;
 }
 
+
+
+
+
+
+
+
+
+
+.comic-bubble {
+  position: relative;
+  background-color: #f0f0f0; /* Color de fondo */
+  border-radius: 30px; /* Bordes redondeados */
+  padding: 20px; /* Espaciado interno */
+  width: 200px; /* Ancho del bocadillo */
+  text-align: center; /* Alineación del texto */
+  font-family: Arial, sans-serif; /* Tipo de fuente */
+  /* Ajusta los siguientes estilos según sea necesario */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Sombra opcional */
+  margin: 40px; /* Margen para visualización */
+}
+
+.comic-bubble::after {
+  content: "";
+  position: absolute;
+  top: 100%; /* Posiciona en la parte inferior del bocadillo */
+  left: 40px; /* Alinea a la izquierda */
+  margin-left: -10px; /* Ajuste para alinear la "cola" */
+  border-width: 15px; /* Tamaño de la "cola" */
+  border-style: solid;
+  border-color: #f0f0f0 transparent transparent transparent;
+
+  /* Explicación de border-color:
+     transparent: lados izquierdo y derecho
+     #f0f0f0: borde inferior (color igual al fondo del bocadillo)
+     transparent: borde superior */
+}
 
 
 
