@@ -10,10 +10,13 @@ body {
   margin: 0;
   color: var(--texto_color);
   font-family: var(--fuente-general);
+  padding-top: 60px;
+  /* Espacio para el aviso de cookies */
   /* Gradiente */
   background: rgb(7, 109, 242);
   background: linear-gradient(180deg, rgba(7, 109, 242, 1) 0%, rgba(167, 199, 242, 1) 20%, rgba(242, 242, 242, 1) 100%, rgba(7, 109, 242, 1) 100%);
 }
+
 /* 
 header {
   background-color: var(--fondo-logo);
@@ -80,13 +83,15 @@ h6 {
 }
 
 .texto-con-borde {
-  color: --color0; /* Color de relleno del texto */
+  color: --color0;
+  /* Color de relleno del texto */
   text-shadow:
-      -1px -1px 0 --color0,  
-       1px -1px 0 --color0,
-      -1px 1px 0 --color0,
-       1px 1px 0 --color0;
+    -1px -1px 0 --color0,
+    1px -1px 0 --color0,
+    -1px 1px 0 --color0,
+    1px 1px 0 --color0;
 }
+
 .boton {
   display: inline-block;
   padding: 10px 20px;
@@ -127,7 +132,7 @@ img.logo_para_texto {
 }
 
 
-footer{
+footer {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -143,7 +148,7 @@ footer .colaboran {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  
+
 }
 
 footer .colaboran .colaboradores {
@@ -155,7 +160,7 @@ footer .colaboran .colaboradores {
 
 /* footer .colaboradores1 .colaboradores2 {} */
 
-footer  img {
+footer img {
   max-width: 6rem;
 }
 
@@ -173,26 +178,41 @@ footer p {
 
 /* BURBUJA  */
 
-.comic-bubble, .cb-izqda, .cb-dcha {
+.comic-bubble,
+.cb-izqda,
+.cb-dcha {
   position: relative;
-  background-color: var(--fondo-logo); /* Color de fondo */
-  border-radius: 30px; /* Bordes redondeados */
-  padding: 20px; /* Espaciado interno */
-  width: 90%; /* Ancho del bocadillo */
-  text-align: center; /* Alineación del texto */
-  font-family: Arial, sans-serif; /* Tipo de fuente */
+  background-color: var(--fondo-logo);
+  /* Color de fondo */
+  border-radius: 30px;
+  /* Bordes redondeados */
+  padding: 20px;
+  /* Espaciado interno */
+  width: 90%;
+  /* Ancho del bocadillo */
+  text-align: center;
+  /* Alineación del texto */
+  font-family: Arial, sans-serif;
+  /* Tipo de fuente */
   /* Ajusta los siguientes estilos según sea necesario */
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Sombra opcional */
-  margin: 40px; /* Margen para visualización */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  /* Sombra opcional */
+  margin: 40px;
+  /* Margen para visualización */
 }
 
-.comic-bubble::after, .cb-izqda::after  {
+.comic-bubble::after,
+.cb-izqda::after {
   content: "";
   position: absolute;
-  top: 100%; /* Posiciona en la parte inferior del bocadillo */
-  left: 45px; /* Alinea a la izquierda */
-  margin-left: -10px; /* Ajuste para alinear la "cola" */
-  border-width: 25px; /* Tamaño de la "cola" */
+  top: 100%;
+  /* Posiciona en la parte inferior del bocadillo */
+  left: 45px;
+  /* Alinea a la izquierda */
+  margin-left: -10px;
+  /* Ajuste para alinear la "cola" */
+  border-width: 25px;
+  /* Tamaño de la "cola" */
   border-style: solid;
   border-color: var(--fondo-logo) transparent transparent transparent;
 
@@ -203,17 +223,23 @@ footer p {
 }
 
 .cb-izqda::after {
-  left: 50px; /* Alinea a la izquierda */
-  margin-left: -10px; /* Ajuste para alinear la "cola" */
+  left: 50px;
+  /* Alinea a la izquierda */
+  margin-left: -10px;
+  /* Ajuste para alinear la "cola" */
 }
 
-.cb-dcha::after  {
+.cb-dcha::after {
   content: "";
   position: absolute;
-  top: 100%; /* Posiciona en la parte inferior del bocadillo */
-  right: 40px; /* Alinea a la izquierda */
-  margin-left: -10px; /* Ajuste para alinear la "cola" */
-  border-width: 25px; /* Tamaño de la "cola" */
+  top: 100%;
+  /* Posiciona en la parte inferior del bocadillo */
+  right: 40px;
+  /* Alinea a la izquierda */
+  margin-left: -10px;
+  /* Ajuste para alinear la "cola" */
+  border-width: 25px;
+  /* Tamaño de la "cola" */
   border-style: solid;
   border-color: var(--fondo-logo) transparent transparent transparent;
 }
@@ -222,4 +248,85 @@ footer p {
   min-width: 320px;
   max-width: 900px;
   margin: 0 auto 0 auto;
+}
+
+
+
+/* COOKIES */
+
+#cookie-notice {
+  background-color: #f8f8f8;
+  color: #333;
+  padding: 15px;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#cookie-notice p {
+  margin: 0;
+  padding: 8px 15px;
+}
+
+#cookie-notice button {
+  background-color: #4285f4;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  cursor: pointer;
+  margin: 0 5px;
+  /* Ajusta el espacio entre los botones y el texto */
+}
+
+#cookie-settings {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1001;
+}
+
+#cookie-settings label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+
+/* Estilo ventana modal */
+
+/* Estilos para la ventana modal */
+#modal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #f0f0f0;
+  padding: 20px;
+  border: 1px solid #ccc;
+  z-index: 1000;
+}
+
+/* Estilos oscurecidos para el fondo detrás de la ventana modal */
+#modal-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+.texto_justificado_forzado {
+  text-align: justify !important;
 }
