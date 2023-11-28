@@ -1,15 +1,5 @@
 /* https://codepen.io/RubenVP/pen/pZOojm */
-
-:root{
-    
-  --color0: #38559B;
-  --color1: #0652E9;
-  --color2: #38B6FF;
-  --color3: #0652E9;
-  --color4: #0657F8;
-  --color5: #F2F2F2;
-  --fondo-logo: #f7f7f7;
-}
+@import url('tema.css');
 
 .hamburger {
     position: fixed;
@@ -36,7 +26,7 @@
 }
 
 ._layer {
-    background: #333333;
+    background: var(--fondo-logo);
     margin-bottom: 4px;
     border-radius: 2px;
     width: 28px;
@@ -108,7 +98,7 @@
 .menuppal ul li {
     list-style: none;
     text-align: center;
-    font-family: Verdadna, Arial, Helvetica;
+    font-family: --;
     font-size: 1.5rem;
     line-height: 3em;
     height: 3em;
